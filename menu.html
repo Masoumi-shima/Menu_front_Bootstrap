@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    </head>
+    <body class="bg-dark text-white">
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                  <a class="navbar-brand">Food options</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sushi">Sushi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#pizza">Pizza</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#dumplings">Dumplings</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="moreOptions">
+                          More
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                          <li><a class="dropdown-item text-muted disabled" href="#homeCoocked"><s>Home-cooked</s></a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-white-50 nav-link" href="#suggestionForm">Contact Shima</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search" id="searchForm">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                      <button class="btn btn-outline-light" type="submit" id="searchBtn">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="text-center my-5">Menu for Thursday</h1>
+    
+                <div class="row my-5" id="sushi">
+                    <div class="col-md-2">
+                        <img src="https://storage.googleapis.com/ueat-assets/e5916c21-418e-48fb-bb51-f1ea641fdb71.jpg" alt="Sushi" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 px-3">
+                        <h3>Sushi</h3>
+                        <p>This is the first and most reliable option (if you like sushi of course, and yes, I know, vegan Sushi is not real Sushi). 
+                            Approved by most vegan & non-vegan Montréalais.es I know. Brendan's opinion on the subject is unknown. 
+                            <p>More info <a href="https://www.sushimomo.ca" class="link-info" target="_blank">here</a>.</p>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="row my-5" id="pizza">
+                    <div class="col-md-2">
+                        <img src="https://static.wixstatic.com/media/8fa0dd_a25719ac87f7459c8e91a9f13fb5415b~mv2.png/v1/fill/w_814,h_880,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8fa0dd_a25719ac87f7459c8e91a9f13fb5415b~mv2.png" alt="Sushi" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 px-3">
+                        <h3>Pizza</h3>
+                        <p>This is clearly pizza so no other info needed. Except that it's not gluten-free and you may not like the <em>fauxmage</em>.
+                            Plus, if you've never had vegan pizza, this might feel weird for you. To put it in your own words:
+                        <blockquote>
+                            <p>"This tastes like vegan food!"</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Lucas, Sep 2022</figcaption>
+                            More info <a href="https://www.chezzacpizza.com" class="link-info" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="row my-5" id="dumplings">
+                    <div class="col-md-2">
+                        <img src="https://harbindumpling.com/public_files/1251/pages/about1.jpg" alt="Sushi" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 px-3">
+                        <h3>Dumplings</h3>
+                        <p>Seriously? Do I have to really explain Dumplings? Ok! So this one has vegan and non-vegan options, but I don't like buying non-vegan food.
+                            Although, if you're really really really uncomfotable with vegan food, I can make an effort.
+                           <p>There was something else I wanted to say about this but I forgot!</p>
+                            More info <a href="https://harbindumpling.com" class="link-info" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="row my-5" id="homeCoocked">
+                    <div class="col-md-2">
+                        <img src="https://i.ebayimg.com/images/g/oM0AAOSw1G5gZpKX/s-l500.jpg" alt="Sushi" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 px-3">
+                        <h3><s>Home-cooked</s></h3>
+                        <p><s>A good, home-cooked diner made with fresh ingredients and cooked with care and love!</s>
+                            <p class="fw-lighter">Nope, we don't do this here. As you can see, this is not an option!</p>
+                            <div id="liveAlertPlaceholder">
+                                <p>More info <a href="#" class="link-info" id="liveAlertLink">here</a>.</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="suggestionForm">
+                  <div class="col-md-6">
+                    <h3 class="m-5">Contact</h3>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Lucas">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="suggestion" class="form-label">Suggestions and/or allergies:</label>
+                      <textarea class="form-control" id="suggestion" rows="4"></textarea>
+                    </div>
+                    <div>
+                      <a class="btn btn-primary mb-5" href="https://signal.org/en/" role="button">Send</a>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </main>
+        <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+        <script>
+            const alertTrigger = document.getElementById('liveAlertLink')
+            if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Told you we DO NOT do this here! What more info do you need?!', 'danger')
+            })
+            }
+        </script>
+    </body>
+    </html>
+
+    
